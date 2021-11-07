@@ -1,106 +1,93 @@
 import './styles.css';
 
-import { Component } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
 import { loadPosts } from '../../utils/load-posts';
 import { Posts } from '../../components/Posts';
 import { Button } from '../../components/Button';
 import { TextInput } from '../../components/TextInput';
 
-export class Home extends Component {
+export const Home = () => {
 
-  state = {
-    posts: [],
-    allPosts: [],
-    page: 0,
-    postPerPage: 5,
-    seacrhValue: ''
-  };
+  const [posts, setPosts] = useState([]);
+  const [allPosts, setAllPosts] = useState([]);
+  const [page, setPage] = useState(0);
+  const [postPerPage] = useState(5);
+  const [searchValue, setSearchValue] = useState('');
 
-  async componentDidMount() {
-    await this.loadPosts();
-  }
+  const noMorePosts = page + postPerPage >= allPosts.length;
 
-  loadPosts = async () => {
+  const filteredPosts = !!searchValue ? allPosts.filter(post => {
+    return post.title.toLowerCase().includes(
+      searchValue.toLowerCase()
+    );
+  }) : posts;
+
+  const HandleLoadPosts = useCallback(async (page, postPerPage) => {
     const postsAndPhotos = await loadPosts();
-    const { page, postPerPage } = this.state;
 
-    this.setState({
-      posts: postsAndPhotos.slice(page, postPerPage),
-      allPosts: postsAndPhotos
-    });
-  }
+    setPosts(postsAndPhotos.slice(page, postPerPage));
+    setAllPosts(postsAndPhotos);
+  }, [])
 
-  loadMorePosts = () => {
-    const {
-      page,
-      postPerPage,
-      allPosts,
-      posts
-    } = this.state;
+  useEffect(() => {
+    console.log('oi');
+    HandleLoadPosts(0, postPerPage);
+  }, [HandleLoadPosts, page, postPerPage]);
+
+  const loadMorePosts = () => {
 
     const nextPage = page + postPerPage;
     const nextPosts = allPosts.slice(nextPage, nextPage + postPerPage);
 
     posts.push(...nextPosts); //Spread operator
 
-    this.setState({ posts, page: nextPage })
+    setPosts(posts);
+    setPage(nextPage);
   }
 
-  handleChange = (e) => {
+  const handleChange = (e) => {
     const { value } = e.target;
-    this.setState({ seacrhValue: value })
+
+    setSearchValue(value);
   }
 
-  render() {
-    const { posts, page, postPerPage, allPosts, seacrhValue } = this.state;
-    const noMorePosts = page + postPerPage >= allPosts.length;
+  return (
+    <section className="container">
 
-    const filteredPosts = !!seacrhValue ? allPosts.filter(post => {
-      return post.title.toLowerCase().includes(
-        seacrhValue.toLowerCase()
-      );
-    })
-      : posts;
+      <section className="search-container">
 
-    return (
-      <section className="container">
+        {!!searchValue && (
+          <h1> Search value: {searchValue} </h1>
+        )}
 
-        <section className="search-container">
-
-          {!!seacrhValue && (
-            <h1> Search value: {seacrhValue} </h1>
-          )}
-
-          <TextInput
-            seacrhValue={seacrhValue}
-            handleChange={this.handleChange}
-          />
-        </section>
-
-
-        {filteredPosts.length > 0 ?
-          (< Posts posts={
-            filteredPosts
-          } />)
-          : (
-            <p> Não existe nenhum post com o título:{seacrhValue} </p>
-          )
-        }
-
-
-        <div className="button-container">
-          {!seacrhValue && (
-            < Button
-              text="Load more posts"
-              onClick={this.loadMorePosts}
-              disabled={noMorePosts}
-            />
-          )}
-        </div>
+        <TextInput
+          seacrhValue={searchValue}
+          handleChange={handleChange}
+        />
       </section>
-    );
-  }
+
+
+      {filteredPosts.length > 0 ?
+        (< Posts posts={
+          filteredPosts
+        } />)
+        : (
+          <p> Não existe nenhum post com o título:{searchValue} </p>
+        )
+      }
+
+      <div className="button-container">
+        {!searchValue && (
+          < Button
+            text="Load more posts"
+            onClick={loadMorePosts}
+            disabled={noMorePosts}
+          />
+        )}
+      </div>
+    </section>
+  );
 }
 
 export default Home;
