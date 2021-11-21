@@ -1,6 +1,6 @@
 export const postCardPropsMock = {
-    title: 'Post title',
-    body: 'Post body',
-    id: '1',
-    cover: 'https://picsum.photos/200/300',
+  title: 'title 1',
+  body: 'body 1',
+  id: 1,
+  cover: 'img/img.png',
 };

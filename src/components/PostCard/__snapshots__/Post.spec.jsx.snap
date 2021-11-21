@@ -5,17 +5,19 @@ exports[`<PostCard /> should match snapshot 1`] = `
   class="post"
 >
   <img
-    alt="Post title"
-    src="https://picsum.photos/200/300"
+    alt="title 1"
+    src="img/img.png"
   />
   <div
     class="post-content"
   >
-    <h1>
-      Post title
-    </h1>
+    <h2>
+      title 1
+       
+      1
+    </h2>
     <p>
-      Post body
+      body 1
     </p>
   </div>
 </div>
