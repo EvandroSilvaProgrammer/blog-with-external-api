@@ -20,34 +20,34 @@
 	🚧 Concluído 🚧
 </h4>
 
-<h3 align="center"> <a href="https://admiring-lalande-c76a7f.netlify.app/">Access demo</a> </h3>
+<h3 align="center"> <a href="https://admiring-lalande-c76a7f.netlify.app/">Acessar a demonstração</a> </h3>
 
 ---
-## Index:
+## Índice:
 <!--ts-->
-   * [About](#-about-the-project)
-   * [Technologies](#-technologies)
-   * [How to run the project](#-how-to-run-the-project)
-      * [Prerequisites](#-pré-requisitos)
-      * [Runing the project](#-runing-the-project)
-   * [Author](#-author)
-   * [License](#-license)
-   * [ReadMe versions](#-readme-versions)
+   * [Sobre](#-sobre-o-projeto)
+   * [Tecnologias](#-tecnologias)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+      * [Pré-requisitos](#-pré-requisitos)
+      * [Rodando o projecto](#-rodando-o-projeto)
+   * [Autor](#-autor)
+   * [Licença](#-licença)
+   * [Versões do ReadMe](#-versões-do-readme)
         * [Português](./README-pt.md)
-        * [English](./README.md)
+        * [Inglês](./README.md)
 <!--/ts-->
 <!--te-->
 ---
-## 💻 About the project
+## 💻 Sobre o projeto
 
 <p>
-    It is a project developed to help learn about the use of external APIs, as well as train the use of React's basic hooks, namely: useState, useEffect and useCallback.
+    Trata-se de um projecto desenvolvido para ajudar a aprender sobre o uso de API's externas, bem como treinar a utilização dos hooks básicos do React, nomedamente: useState, useEffect e o useCallback.
 </p>
 
 ---
-## 🛠 Technologies
-<p>The following tools were used in the construction of the project:</p>
-<strong>Language</strong>
+## 🛠 Tecnologias
+<p>As seguintes ferramentas foram usadas na construção do projecto:</p>
+<strong>Linguagem</strong>
 <ul>
     <li>
         <a href="https://www.w3schools.com/js/">JavaScript</a> 
@@ -64,7 +64,7 @@
     <li><a href="https://reactjs.org/">ReactJS</a></li>
 </ul>
 
-<strong>External API</strong>
+<strong>API externa</strong>
 <ul>
     <li><a href="https://jsonplaceholder.typicode.com/">JSON Placeholder</a></li>
 </ul>
@@ -75,29 +75,28 @@
 </ul>
 
 ---
-## 🚀 How to run the project
+## 🚀 Como executar o projeto
 ---
-### ✅ Prerequisites:
+### ✅ Pré-requisitos:
 
 <li><a href="https://git-scm.com">Git</a></li>
 <li><a href="https://nodejs.org/en/">Node.js</a></li>
-<li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-<p>Besides, it's good to have an editor to work with code like <a href="https://code.visualstudio.com/">Visual Studio Code (VSCode)</a> </p>
+<p>Além disto é bom ter um editor para trabalhar com o código como o <a href="https://code.visualstudio.com/">Visual Studio Code (VSCode)</a> </p>
 
 ---
-### 🎲 Runing the project:
+### 🎲 Rodando o projecto
 </br>
 
-#### Clone the repository
+#### Clone o repositório
 ```bash
 git clone https://github.com/EvandroSilvaProgrammer/blog-with-external-api.git
 ```
-#### Access the project folder in terminal/cmd
+#### Acesse a pasta do projeto no terminal/cmd
 ```bash
 cd blog-with-external-api
 ```
 
-#### Install the dependencies
+#### Instale as dependências
 ```bash
 yarn
 ```
@@ -106,7 +105,7 @@ yarn
 npm install
 ```
 
-#### Run the application in development mode
+#### Execute a aplicação em modo de desenvolvimento
 ```bash
 yarn start
 ```
@@ -115,11 +114,11 @@ yarn start
 npm start
 ```
 
-#### The project will start at:3000 - access http://localhost:3000
+#### O projecto inciará na porta:3000 - acesse http://localhost:3000
 
 ---
 
-## 🦸 Author
+## 🦸 Autor
 
 <a href="https://github.com/EvandroSilvaProgrammer">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67426023?v=4" width="100px;" alt=""/>
@@ -135,14 +134,14 @@ npm start
 
 ---
 
-## 📝 License
+## 📝 Licença
 
-This project is under license [MIT](./LICENSE).
+Este projeto esta sobe a licença [MIT](./LICENSE).
 
-Made with ❤️ by Evandro Silva AKA SkeBug 👋🏽 [Get int touch!](https://www.linkedin.com/in/evandrosilva-programmer/)
+Feito com ❤️ por Evandro Silva AKA SkeBug 👋🏽 [Entre em contato!](https://www.linkedin.com/in/evandrosilva-programmer/)
 
 ---
 
-##  README Versions
+##  Versões do README
 
-[Português 🇦🇴](./README-pt.md)  |  [English 🇺🇸](./README.md) 
+[Português 🇦🇴](./README-pt.md)  |  [Inglês 🇺🇸](./README.md) 
