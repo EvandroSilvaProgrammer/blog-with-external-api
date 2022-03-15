@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EvandroSilvaProgrammer/blog-with-external-api?color=%2304D361">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/EvandroSilvaProgrammer/blog-with-external-api">
 
-## Available Scripts
+  <a href="https://github.com/tgmarinho/README-ecoleta/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EvandroSilvaProgrammer/blog-with-external-api">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 
-In the project directory, you can run:
+   <img alt="" src="https://img.shields.io/badge/Feito por-Evandro Silva AKA SkeBug-blueviolet">
+</p>
+<h1 align="center" style="font-weight: bold"> 📰 Blog - With Exteernal API 📰</h1>
+<h1 align="center">
+    <img alt="Blog" title="#Blog" src="src/assets/images/readMe/banner.gif" />
+</h1>
 
-### `yarn start`
+<h4 align="center"> 
+	🚧 Concluído 🚧
+</h4>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3 align="center"> <a href="https://admiring-lalande-c76a7f.netlify.app/">Acessar a demonstração</a> </h3>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
+## Índice:
+<!--ts-->
+   * [Sobre](#-sobre-o-projeto)
+   * [Tecnologias](#-tecnologias)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+      * [Pré-requisitos](#-pré-requisitos)
+      * [Rodando o projecto](#-rodando-o-projeto)
+   * [Autor](#-autor)
+   * [Licença](#-licença)
+   * [Versões do ReadMe](#-versões-do-readme)
+        * [Português](./README-pt.md)
+        * [Inglês](./README.md)
+<!--/ts-->
+<!--te-->
+---
+## 💻 Sobre o projeto
 
-### `yarn test`
+<p>
+    Trata-se de um projecto que foi desenvolvido para ajudar a aprender sobre o uso de API's externas, bem como treinar a utilização dos hooks básicos do React, nomedamente: useState, useEffect e o useCallback.
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
+## 🛠 Tecnologias
+<p>As seguintes ferramentas foram usadas na construção do projecto:</p>
+<strong>Linguagem</strong>
+<ul>
+    <li>
+        <a href="https://www.w3schools.com/js/">JavaScript</a> 
+    </li>
+</ul>
 
-### `yarn build`
+<strong>Runtime</strong>
+<ul>
+    <li><a href="https://nodejs.org/en/">Node.js</a></li>
+</ul>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<strong>Library</strong>
+<ul>
+    <li><a href="https://reactjs.org/">ReactJS</a></li>
+</ul>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<strong>API externa</strong>
+<ul>
+    <li><a href="https://jsonplaceholder.typicode.com/">JSON Placeholder</a></li>
+</ul>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<strong>Deploy</strong>
+<ul>
+    <li><a href="https://www.netlify.com/">Netlify</a></li>
+</ul>
 
-### `yarn eject`
+---
+## 🚀 Como executar o projeto
+---
+### ✅ Pré-requisitos:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<li><a href="https://git-scm.com">Git</a></li>
+<li><a href="https://nodejs.org/en/">Node.js</a></li>
+<p>Além disto é bom ter um editor para trabalhar com o código como o <a href="https://code.visualstudio.com/">Visual Studio Code (VSCode)</a> </p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
+### 🎲 Rodando o projecto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# 1 - Clone este repositório
+$ git clone https://github.com/EvandroSilvaProgrammer/blog-with-external-api.git
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# 2 - Acesse a pasta do projeto no terminal/cmd
+$ cd blog-with-external-api
 
-## Learn More
+# Instale as dependências
+$ yarn
+#ou
+$ npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
+#ou
+$ npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# O projecto inciará na porta:3000 - acesse http://localhost:3000
 
-### Code Splitting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🦸 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<a href="https://github.com/EvandroSilvaProgrammer">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67426023?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Evandro Silva AKA SkeBug</b></sub></a> <a href="https://github.com/EvandroSilvaProgrammer" title="EvandroSilva">🇦🇴</a>
+ <br /> <br />
 
-### Making a Progressive Web App
+[![Linkedin Badge](https://img.shields.io/badge/-Evandro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/evandrosilva-programmer/)](https://www.linkedin.com/in/evandrosilva-programmer/) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[![Linkedin Badge](https://img.shields.io/badge/-Evandro-blue?style=flat-square&logo=facebook&logoColor=white&link=https://www.facebook.com/evandrosilva.programmer)](https://www.facebook.com/evandrosilva.programmer)
 
-### Advanced Configuration
+[![Gmail Badge](https://img.shields.io/badge/-evandrosilva.programmer@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:evandrosilva.programmer@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📝 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Este projeto esta sobe a licença [MIT](./LICENSE).
 
-### `yarn build` fails to minify
+Feito com ❤️ por Evandro Silva AKA SkeBug 👋🏽 [Entre em contato!](https://www.linkedin.com/in/evandrosilva-programmer/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+##  Versões do README
+
+[Português 🇦🇴](./README.md)  |  [Inglês 🇺🇸](./README-en.md) 
