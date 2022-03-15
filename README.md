@@ -11,7 +11,7 @@
 
    <img alt="" src="https://img.shields.io/badge/Feito por-Evandro Silva AKA SkeBug-blueviolet">
 </p>
-<h1 align="center" style="font-weight: bold"> 📰 Blog - With Exteernal API 📰</h1>
+<h1 align="center" style="font-weight: bold"> 📰 Blog - With External API 📰</h1>
 <h1 align="center">
     <img alt="Blog" title="#Blog" src="src/assets/images/readMe/banner.gif" />
 </h1>
@@ -85,27 +85,36 @@
 
 ---
 ### 🎲 Rodando o projecto
+</br>
 
+#### 1 - Clone o repositório
 ```bash
-# 1 - Clone este repositório
-$ git clone https://github.com/EvandroSilvaProgrammer/blog-with-external-api.git
-
-# 2 - Acesse a pasta do projeto no terminal/cmd
-$ cd blog-with-external-api
-
-# Instale as dependências
-$ yarn
-#ou
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ yarn start
-#ou
-$ npm start
-
-# O projecto inciará na porta:3000 - acesse http://localhost:3000
-
+git clone https://github.com/EvandroSilvaProgrammer/blog-with-external-api.git
 ```
+#### 2 - Acesse a pasta do projeto no terminal/cmd
+```bash
+cd blog-with-external-api
+```
+
+#### Instale as dependências
+```bash
+yarn
+```
+#### ou
+```bash
+npm install
+```
+
+#### Execute a aplicação em modo de desenvolvimento
+```bash
+yarn start
+```
+#### ou
+```bash
+npm start
+```
+
+#### O projecto inciará na porta:3000 - acesse http://localhost:3000
 
 ---
 
